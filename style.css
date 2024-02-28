@@ -54,7 +54,7 @@ nav ul {
 ul li {
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 5px;
     list-style-type: none;
     text-align: center;
     justify-content: space-between;
