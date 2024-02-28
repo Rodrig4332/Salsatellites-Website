@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100%;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Times New Roman',sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+img {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: blue;
+    outline: none;
+}
+
+.myImg {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+span a {
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid blue;
+    border-radius: 3px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    color: #fff;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+} 
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    img{
+      width: 100%;
+    }
+}
+
