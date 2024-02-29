@@ -83,7 +83,17 @@ h4 {
 
 img {
     background-size: cover;
-    
+    width: 30px;
+    height: 20px;
+    padding: 1px;
+}
+
+.goog-te-combo {
+    border-radius: 5px;
+}
+
+.images{
+    background-size: cover;
     width: 100%;
     height: 500px;
 }
