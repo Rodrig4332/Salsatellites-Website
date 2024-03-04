@@ -11,19 +11,23 @@
     <h1 href="top">Check out our Work!</h1>
      <button><a href="index.html" target="_blank">Home</button></a>
     <!-- Carousel images -->
-    <div class="carousel">
-       <div class="image-container" id="imgs">
-        <img class="myImg" src="imgs/sal-van.jpg" alt="Chavas vehicle" >
-        <img class="myImg"  src="imgs/van.jpg" alt="The van" >
-        <img class="myImg"  src="imgs/dish.jpg" alt="Dish receiver installed" >
-        <img class="myImg"  src="imgs/connections.jpg" alt="Connections" >
-        <img class="myImg"  src="imgs/mobile-setup.jpg" alt="Phone mobile-setup" >
-        <img class="myImg"  src="imgs/webcams.jpg" alt="Live images on tv" >
-        <img class="myImg" src="imgs/Wallmounted-tv.jpg" alt="Wall-mounted-tv">
-        <img class="myImg" src="imgs/wallmounted-tv2.jpg" alt="Wall-mounted-tv2">
-        <img class="myImg" src="imgs/security-camera.jpg" alt="security-camera">
-    </div>
-    </div>
+    <div class="gallery">
+        <img src="imgs/img1.jpg" alt="Image 1" onclick="openModal('imgs/img1.jpg')">
+        <img src="imgs/img2.jpg" alt="Image 2" onclick="openModal('imgs/img2.jpg')">
+        <img src="imgs/img3.jpg" alt="Image 3" onclick="openModal('imgs/img3.jpg')">
+        <img src="imgs/img4.jpg" alt="Image 4" onclick="openModal('imgs/img4.jpg')">
+        <img src="imgs/img5.jpg" alt="Image 5" onclick="openModal('imgs/img5.jpg')">
+        <img src="imgs/img6.jpg" alt="Image 6" onclick="openModal('imgs/img6.jpg')">
+        <img src="imgs/img7.jpg" alt="Image 7" onclick="openModal('imgs/img7.jpg')">
+        <img src="imgs/img8.jpg" alt="Image 8" onclick="openModal('imgs/img8.jpg')">
+        <img src="imgs/img9.jpg" alt="Image 9" onclick="openModal('imgs/img9.jpg')">
+        <img src="imgs/img10.jpg" alt="Image 10" onclick="openModal('imgs/img10.jpg')">
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+      </div>
        <h2>Here we have some of the images from previews work installations.</h2>
        <span><a href="#top">Top</a></span>
     <!-- Script -->

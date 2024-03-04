@@ -1,20 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html{
+html {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    max-width: 100%;
-    background-color: aliceblue;
+}
+
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
 }
 
 h1 {
@@ -36,17 +43,6 @@ h2 {
 
 }
 
-img {
-    margin-top: 20px;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 3px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
-}
-
 button a {
     text-decoration: none;
     display: flex;
@@ -60,10 +56,64 @@ button a {
     outline: none;
 }
 
-.myImg {
-    border-radius: 10px;
+.gallery .image img {
+    width: 100%;
+    border: 10px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.gallery .image:hover {
+    transform: scale(1.1);
+}
+
+
+/* Styles for the image gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.gallery img {
+    margin: 10px;
     cursor: pointer;
-    transition: 0.3s;
+}
+  
+  /* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+  
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .gallery .image {
+        width: calc(100% / 2);
+    }
 }
 
 span a {
