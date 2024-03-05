@@ -110,12 +110,6 @@ button a {
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-    .gallery .image {
-        width: calc(100% / 2);
-    }
-}
-
 span a {
     float: right;
     padding: 10px;
@@ -132,18 +126,50 @@ span a {
     to {transform:scale(1)}
 } 
 
-  /* 100% Image Width on Smaller Screens */
+@media (max-width: 1000px) {
+    .gallery .image {
+        width: calc(100% / 2);
+    }
+}
+
+/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 400px){
     img{
       width: 100%;
     }
 }
 
-@media (max-width: 1200px) {
-
+ /* @media (min-width:320px) 
+ {
+    img{
+      width: 100%;
+    }
+}
+ @media (min-width:481px) {
+    img{
+      width: 100%;
+    }
+}  
+@media (min-width:641px) {
+    img{
+      width: 100%;
+    }
 }
 
-@media (min-width: 400px) {
-
+ @media (min-width:961px)  {
+    img{
+      width: 100%;
+    }
 }
 
+ @media (min-width:1025px) {
+    img{
+      width: 100%;
+    }
+}
+
+@media (min-width:1281px) {
+    img{
+      width: 100%;
+    }
+} */
