@@ -51,6 +51,7 @@ button a {
     width: 100vw;
     padding: 15px;
     border-radius: 5px;
+    margin-top: 5px;
     color: #fff;
     background-color: blue;
     outline: none;
